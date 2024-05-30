@@ -48,7 +48,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'LiveStramingCamer',
+            'LiveStreamingCamera',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
@@ -196,10 +196,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                 ),
                 child: FlutterFlowWebView(
-                  content: valueOrDefault<String>(
-                    _model.textController.text,
-                    'http://192.168.29.49:5000',
-                  ),
+                  content: _model.textController.text,
                   bypass: false,
                   height: 500.0,
                   verticalScroll: false,
